@@ -15,7 +15,7 @@ public class Choinka {
 		}
 	}
 	public static void main (String[] args) {
-		myMethod(Integer.parseInt(args[10]));
+		myMethod(Integer.parseInt(args[0]));
 	}
 }
 
