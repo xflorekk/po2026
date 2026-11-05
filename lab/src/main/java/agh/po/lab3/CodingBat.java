@@ -1,6 +1,8 @@
 package agh.po.lab3;
 
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 public class CodingBat {
     //Warmup 1
@@ -45,4 +47,23 @@ public class CodingBat {
         CodingBat codingBat=new CodingBat();
         codingBat.doubleX("xxxx");
     }
+
+    public Map<String, String> mapAB(Map<String, String> map) {
+        if (map.containsKey("a") && map.containsKey("b")) {
+            String val = map.get("a")+map.get("b");
+            map.put("ab", val);
+        }
+        return map;
+    }
+
+    public Map<String, Integer> wordLen(String[] strings) {
+        Map<String, Integer> map = new HashMap<>();
+
+        for (String str : strings) {
+            map.put(str, str.length());
+        }
+        return map;
+    }
+
+
 }
