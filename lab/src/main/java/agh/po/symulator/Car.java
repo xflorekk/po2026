@@ -22,7 +22,7 @@ public class Car {
     public static void main(String[] args) {
         Transmission t1 = new Transmission();
         Engine e1 = new Engine();
-        Position p = new Position();
+        Position p = new Position(0.0, 0.0);
         p.setPosition(0.0,0.0);
         Car car1 = new Car(e1, t1, p);
     }
